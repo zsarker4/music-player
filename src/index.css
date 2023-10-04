@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.range{
+    -webkit-appearance: none;
+    width: 80%;
+    height: 5px;
+    border: 0.5px solid gray;
+    border-radius: 0;
+    background-color: rgb(24, 24, 27);
+    background-image: linear-gradient(white, white);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.volume-range{
+    -webkit-appearance: none;
+    width: 70%;
+    height: 4px;
+    border: 0.5px solid gray;
+    border-radius: 0;
+    background-color: rgb(24, 24, 27);
+    background-image: linear-gradient(white, white);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.volume-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 11px;
+    width: 3px;
+    background: white;
+    border: 0.5px solid gray;
+    cursor: pointer;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 13px;
+    width: 3px;
+    background: white;
+    border: 0.5px solid gray;
+    cursor: pointer;
+}
+
+.active {
+    @apply text-cyan-500;
+  }
+  
+  .active svg {
+    @apply text-cyan-500;
+  }
+  
+  .bar:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .bar:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  .bar:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  .bar:nth-child(5) {
+    animation-delay: 0.8s;
+  }
+  .bar:nth-child(6) {
+    animation-delay: 1s;
+  }
+  
+  .smooth-transition {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .hide-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
